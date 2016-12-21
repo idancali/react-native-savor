@@ -1,0 +1,5 @@
+.DS_Store
+pods
+node_modules
+coverage
+*.log

@@ -1,0 +1,24 @@
+{
+  "name": "main",
+  "version": "0.1.0",
+  "description": "This is a React Native Savor example",
+  "main": "index.js",
+  "scripts": {
+    "savor": "react-native-savor",
+    "test": "react-native-savor test",
+    "lint": "react-native-savor lint",
+    "coverage": "react-native-savor coverage",
+    "coveralls": "react-native-savor coveralls",
+    "codacy": "react-native-savor codacy",
+    "codeclimate": "react-native-savor codeclimate"
+  },
+  "babel": {
+    "plugins": ["transform-react-jsx"],
+    "presets": ["react-native", {}]
+  },
+  "author": "I. Dan Calinescu <idancalinescu@gmail.com>",
+  "license": "MIT",
+  "dependencies" : {
+    "react-native-savor" : "../.."
+  }
+}
