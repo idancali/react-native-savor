@@ -159,20 +159,6 @@ You can now simply run your tests like so:
 npm test
 ```
 
-or like this:
-
-```javascript
-npm run test
-```
-
-or even like this:
-
-```javascript
-npm run savor test
-```
-
-![Example](https://raw.githubusercontent.com/idancali/savor/master/examples/example.main.1.gif)
-
 # Test Coverage
 
 You can check your coverage like this:
@@ -180,14 +166,6 @@ You can check your coverage like this:
 ```javascript
 npm run coverage
 ```
-
-or like this:
-
-```javascript
-npm run savor coverage
-```
-
-![Example](https://raw.githubusercontent.com/idancali/savor/master/examples/example.main.3.gif)
 
 # Static Analysis
 
@@ -197,59 +175,9 @@ You can lint your code like this:
 npm run lint
 ```
 
-or like this:
-
-```javascript
-npm run savor lint
-```
-
-![Example](https://raw.githubusercontent.com/idancali/savor/master/examples/example.main.2.gif)
-
 # Working Example
 
 [Take a look at the example](https://github.com/idancali/savor/tree/master/examples/main) for more details on how to integrate Savor within your module.
-
-In our example, we have a simple module in ```src/main.js``` that generates a greeting, like so:
-
-```javascript
-var main = {
-  createGreeting: function(name) {
-    return "Hello, " + name;
-  }
-}
-
-module.exports = main;
-```
-
-And here's how it is to test this with Savor. First, add the Savor hooks in your ```scripts``` field:
-
-```javascript
-"scripts": {
-  "savor": "savor",
-  "test": "savor test",
-  "lint": "savor lint",
-  "coverage": "savor coverage",
-  "coveralls": "savor coveralls",
-  "codacy": "savor codacy"
-}
-```
-
-Next, write your test in ```test/main.js```:
-
-```javascript
-var savor = require('savor');
-var main  = require('../src/main');
-
-savor.add('should create a valid greeting', function(context, done) {
-  var greeting = main.createGreeting('Dan');
-  context.expect(greeting).to.equal("Hello, Dan");
-  done && done();
-}).
-
-run('Greeting Tests');
-```
-
-Then simply [run your tests](#running-tests), [check your coverage](#test-coverage) and [analyze your code](#static-analysis) as documented above.
 
 Enjoy!
 
