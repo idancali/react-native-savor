@@ -1,7 +1,7 @@
 {
   "name": "react-native-savor",
-  "version": "0.1.1",
-  "description": "A simple way of adding tests to your React Native apps",
+  "version": "0.1.2",
+  "description": "A simple way of adding tests (and more) to your React Native apps",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --require react-native-mock/mock --compilers js:babel-core/register --recursive test/specs/**/*.js",
@@ -38,7 +38,8 @@
     "testing",
     "qa",
     "test",
-    "coverage"
+    "coverage",
+    "react-native"
   ],
   "homepage": "https://github.com/idancali/savor",
   "peerDependencies": {
