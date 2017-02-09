@@ -1,10 +1,10 @@
 var commands = require('savor/bin/commands')
 
 var coverageBin = "./node_modules/.bin/babel-node";
-var coverageLocalArgs = ['./node_modules/.bin/istanbul', 'cover', './node_modules/.bin/_mocha', '--', '--require', 'react-native-mock/mock', '--report', 'lcovonly', 'test/specs/mobile/**/*.js'];
+var coverageLocalArgs = ['./node_modules/.bin/istanbul', 'cover', './node_modules/.bin/_mocha', '--', '--require', 'react-native-mock/mock', '--report', 'lcovonly', 'test/mobile/**/*.js'];
 
 var testBin = "./node_modules/.bin/mocha"
-var testArgs = ['--require', 'react-native-mock/mock', '--compilers', 'js:babel-core/register', '--recursive', 'test/specs/mobile/**/*.js']
+var testArgs = ['--require', 'react-native-mock/mock', '--compilers', 'js:babel-core/register', '--recursive', 'test/mobile/**/*.js']
 
 commands.test = [{
     bin: testBin,
