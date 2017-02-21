@@ -7,13 +7,13 @@ var testBin = "./node_modules/.bin/mocha"
 var testArgs = ['--require', 'react-native-mock/mock', '--compilers', 'js:babel-core/register', '--recursive', 'test/specs/**/*.js']
 
 commands.test = [{
-    bin: testBin,
-    args: testArgs
+  bin: testBin,
+  args: testArgs
 }]
 
 commands.coverage = [{
-    bin: coverageBin,
-    args: coverageLocalArgs
+  bin: coverageBin,
+  args: coverageLocalArgs
 }]
 
 module.exports = commands

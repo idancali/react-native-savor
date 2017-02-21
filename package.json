@@ -1,6 +1,6 @@
 {
   "name": "react-native-savor",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A simple way of adding tests (and more) to your React Native apps",
   "main": "index.js",
   "scripts": {
@@ -42,10 +42,6 @@
     "react-native"
   ],
   "homepage": "https://github.com/idancali/savor",
-  "peerDependencies": {
-    "react": "15.x",
-    "react-native": "0.x"
-  },
   "dependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.21.0",
@@ -62,10 +58,8 @@
     "react-dom": "^15.4.1",
     "react-native-mock": "^0.2.9",
     "savor": "0.x",
-    "webpack": "^1.14.0"
-  },
-  "devDependencies": {
-    "react": "^15.4.1",
-    "react-native": "^0.39.2"
+    "webpack": "^1.14.0",
+    "react": "15.x",
+    "react-native": "0.x"
   }
 }
