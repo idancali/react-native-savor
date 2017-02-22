@@ -1,6 +1,6 @@
 const path = require('path')
 
-var deps = ["react-native-savor"]
+var deps = []
 
 try {
   const mod = require(path.resolve(process.cwd(), 'test'))
@@ -20,5 +20,5 @@ function isDep(file) {
 }
 
 require('babel-register')({
-  ignore: !isDep
+  ignore: (file) => !isDep(file)
 })
