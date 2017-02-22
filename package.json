@@ -1,6 +1,6 @@
 {
   "name": "react-native-savor",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A simple way of adding tests (and more) to your React Native apps",
   "main": "index.js",
   "scripts": {
@@ -57,7 +57,7 @@
     "react-addons-test-utils": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-native-mock": "^0.2.9",
-    "savor": "0.x",
+    "react-savor": "0.x",
     "webpack": "^1.14.0",
     "react": "15.x",
     "react-native": "0.x"
